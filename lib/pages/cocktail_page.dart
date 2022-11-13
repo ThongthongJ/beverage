@@ -34,6 +34,7 @@ class _CocktailPageState extends State<CocktailPage> {
         image: jsonbody[j]['strDrinkThumb'],
         Category: jsonbody[j]['strCategory'],
         price: jsonbody[j]['idDrink'],
+        strGlass: jsonbody[j]['strGlass'],
       ));
     }
     setState(() {});
