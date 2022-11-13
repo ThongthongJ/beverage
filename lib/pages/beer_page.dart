@@ -32,9 +32,9 @@ class _BeerPageState extends State<BeerPage> {
         tagline: jsonbody[j]['tagline'],
         description: jsonbody[j]['description'],
         image: jsonbody[j]['image_url'],
+        price: jsonbody[j]['target_fg'],
       ));
     }
-
     setState(() {});
   }
 

@@ -36,6 +36,8 @@ class CocktailCard extends StatelessWidget {
                 ],
               ),
             ),
+            Text('Price: ${cocktail.price.substring(0, 3)}฿'),
+            SizedBox(width: 72.0),
             ElevatedButton(
               onPressed: () {},
               child: Icon(
@@ -58,6 +60,5 @@ class CocktailCard extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }
