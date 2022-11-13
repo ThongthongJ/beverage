@@ -4,6 +4,8 @@ class Beer {
   final String description;
   final String image;
   final int price;
+  final String first_brewed;
+  final String contributed;
 
   Beer({
     required this.name,
@@ -11,5 +13,7 @@ class Beer {
     required this.description,
     required this.image,
     required this.price,
+    required this.first_brewed,
+    required this.contributed,
   });
 }

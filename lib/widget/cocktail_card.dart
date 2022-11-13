@@ -28,7 +28,8 @@ class CocktailCard extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('NAME: ${cocktail.name}'),
+                      Text('NAME: ${cocktail.name}',
+                          style: TextStyle(fontSize: 18.0)),
                       SizedBox(height: 8.0),
                       Text('Category: ${cocktail.Category}'),
                     ],
@@ -37,25 +38,7 @@ class CocktailCard extends StatelessWidget {
               ),
             ),
             Text('Price: ${cocktail.price.substring(0, 3)}฿'),
-            SizedBox(width: 72.0),
-            ElevatedButton(
-              onPressed: () {},
-              child: Icon(
-                Icons.remove,
-              ),
-            ),
-            SizedBox(width: 32.0),
-            Container(
-              child: Text('10'),
-            ),
-            SizedBox(width: 32.0),
-            ElevatedButton(
-              onPressed: () {},
-              child: Icon(
-                Icons.add,
-              ),
-            ),
-            SizedBox(width: 8.0),
+            SizedBox(width: 80.0),
           ],
         ),
       ),

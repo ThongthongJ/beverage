@@ -28,12 +28,13 @@ class _BeerPageState extends State<BeerPage> {
 
     for (int j = 0; j < jsonbody.length; j++) {
       _listBeer.add(Beer(
-        name: jsonbody[j]['name'],
-        tagline: jsonbody[j]['tagline'],
-        description: jsonbody[j]['description'],
-        image: jsonbody[j]['image_url'],
-        price: jsonbody[j]['target_fg'],
-      ));
+          name: jsonbody[j]['name'],
+          tagline: jsonbody[j]['tagline'],
+          description: jsonbody[j]['description'],
+          image: jsonbody[j]['image_url'],
+          price: jsonbody[j]['target_fg'],
+          first_brewed: jsonbody[j]['first_brewed'],
+          contributed: jsonbody[j]['contributed_by']));
     }
     setState(() {});
   }

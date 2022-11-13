@@ -5,7 +5,7 @@ import '../models/beer_model.dart';
 
 class BeerCard extends StatelessWidget {
   final Beer beers;
-  int _numBeer = 0;
+
   BeerCard({required this.beers});
 
   @override
@@ -29,41 +29,19 @@ class BeerCard extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('NAME: ${beers.name}'),
+                      Text('NAME: ${beers.name}',
+                          style: TextStyle(fontSize: 18.0)),
                       SizedBox(height: 8.0),
                       Text('TagLine: ${beers.tagline}'),
+                      Text('First brewed: ${beers.first_brewed}'),
+                      Text('Contributed By: ${beers.contributed}')
                     ],
                   ),
                 ],
               ),
             ),
             Text('Price: ${beers.price}฿'),
-            SizedBox(width: 72.0),
-            ElevatedButton(
-              onPressed: () {
-                if (_numBeer <= 0) {
-                  return;
-                }
-                _numBeer--;
-              },
-              child: Icon(
-                Icons.remove,
-              ),
-            ),
-            SizedBox(width: 32.0),
-            Container(
-              child: Text('${_numBeer}'),
-            ),
-            SizedBox(width: 32.0),
-            ElevatedButton(
-              onPressed: () {
-                _numBeer++;
-              },
-              child: Icon(
-                Icons.add,
-              ),
-            ),
-            SizedBox(width: 8.0),
+            SizedBox(width: 80.0),
           ],
         ),
       ),
