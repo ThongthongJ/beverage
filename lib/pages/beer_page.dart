@@ -35,7 +35,7 @@ class _BeerPageState extends State<BeerPage> {
       ));
     }
 
-
+    setState(() {});
   }
 
   Widget build(BuildContext context) {

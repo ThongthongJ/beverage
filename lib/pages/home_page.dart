@@ -20,10 +20,10 @@ class _HomePageState extends State<HomePage> {
                 image: AssetImage("assets/images/beverageBackground4.jpg"),
                 fit: BoxFit.cover)),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
+          // crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            //Image.asset('assets/images/welcome.png'),
+            Image.asset('assets/images/welcome.png'),
             SizedBox(height: 24.0),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,

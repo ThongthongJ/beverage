@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'ฺBeverage Menu',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
       home: HomePage(),
     );

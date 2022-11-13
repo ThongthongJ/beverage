@@ -35,6 +35,7 @@ class _CocktailPageState extends State<CocktailPage> {
         Category: jsonbody[j]['strCategory'],
       ));
     }
+    setState(() {});
   }
 
   Widget build(BuildContext context) {
